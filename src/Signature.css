@@ -1,7 +1,9 @@
 .signature {
     font-family: "Cedarville Cursive", cursive;
-    font-weight: 900;
+    font-weight: bolder;
     font-style: normal;
+    font-size: 300%;
+    color: #000;
   }
 
 

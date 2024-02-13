@@ -1,8 +1,10 @@
+import './ProfilePicture.css'
+
 function ProfilePicture() {
 
     return (
         <>
-        <img src='profile-picture.jpg'></img>
+        <img className='ProfilePicture' src='profile-picture.jpg'></img>
         </>
     )
 }
