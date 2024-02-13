@@ -1,4 +1,4 @@
-function ResumePage() {
+function Resume() {
 
     return (
         <>
@@ -6,4 +6,4 @@ function ResumePage() {
     )
 }
 
-export default ResumePage;
+export default Resume;

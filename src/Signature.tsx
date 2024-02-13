@@ -1,8 +1,9 @@
+import './Signature.css'
+
 function Signature() {
 
-
     return (
-        <div>
+        <div className="signature">
             Seth Hobson
         </div>
     )
