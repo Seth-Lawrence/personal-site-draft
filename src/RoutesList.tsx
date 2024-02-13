@@ -4,7 +4,7 @@
  *
  * State: none
  *
- * renders { ContactPage, HomePage, AboutPage, Resume }
+ * renders { ContactPage, Homepage, AboutPage, Resume }
  */
 function RoutesList() {
 
