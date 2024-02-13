@@ -1,13 +1,13 @@
 import Linkedin from "./Linkedin";
 import Signature from "./Signature";
-import './Navbar.css';
+import './Navbar.css'
 
 function Navbar() {
 
   return (
     <div className='Navbar'>
-      <Linkedin />
       <Signature />
+      <Linkedin />
     </div>
   )
 }
