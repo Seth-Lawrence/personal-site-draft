@@ -1,6 +1,6 @@
 import './App.css';
 
-import Navbar from './Navbar';
+import Navigation from './Navigation';
 
 import Homepage from './Homepage';
 
@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
 
-        <Navbar />
+        <Navigation />
         <Homepage />
     </div>
   );
