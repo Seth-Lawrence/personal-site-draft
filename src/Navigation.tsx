@@ -1,17 +1,17 @@
 import Linkedin from "./Linkedin";
 import Signature from "./Signature";
-import { Navbar, NavItem } from 'reactstrap';
+import { Navbar, NavItem, NavLink } from 'reactstrap';
 import './Navigation.css';
 import Github from './Github'
 
-function Navigation() {
+function Navigation({ redirect }) {
 
   return (
     <div className='Navigation'>
       <Navbar className='Navigation'>
         <Signature />
-        <Linkedin />
-        <Github />
+        <NavLink><Linkedin redirect={redirect} /></NavLink>
+        <NavLink><Github redirect={redirect} /></NavLink>
       </Navbar>
     </div>
   );

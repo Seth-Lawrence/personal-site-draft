@@ -1,14 +1,16 @@
 import './Github.css';
 import { FaGithub } from "react-icons/fa";
 
+// interface NavigationProps {
+//     redirect(evt: React.MouseEvent, path: string): void
+//   }
 
-
-function Github() {
-
-
+function Github({redirect}: {redirect:Function}) {
 
     return (
-       <FaGithub className='Github'></FaGithub>
+        <a onClick={(evt) => redirect(evt, 'https://www.github.com/Seth-Lawrence')}>
+            <FaGithub className='Github'></FaGithub>
+        </a>
     );
 }
 

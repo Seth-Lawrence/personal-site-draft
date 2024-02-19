@@ -1,12 +1,7 @@
 import './Linkedin.css';
 
+function Linkedin({ redirect }: {redirect: Function}) {
 
-function Linkedin() {
-
-  function redirect(evt: React.MouseEvent, path: string): void {
-    evt.preventDefault();
-    window.open(path);
-  }
 
   return (
     <div className='Linkedin'>
