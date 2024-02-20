@@ -1,6 +1,6 @@
 import Linkedin from "./Linkedin";
 import Signature from "./Signature";
-import { Navbar, NavItem, NavLink } from 'reactstrap';
+import { Navbar, NavLink } from 'reactstrap';
 import './Navigation.css';
 import Github from './Github'
 
