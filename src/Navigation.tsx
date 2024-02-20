@@ -4,7 +4,7 @@ import { Navbar, NavItem, NavLink } from 'reactstrap';
 import './Navigation.css';
 import Github from './Github'
 
-function Navigation({ redirect }) {
+function Navigation({ redirect }: {redirect: Function}) {
 
   return (
     <div className='Navigation'>

@@ -1,9 +1,6 @@
 import './Github.css';
 import { FaGithub } from "react-icons/fa";
 
-// interface NavigationProps {
-//     redirect(evt: React.MouseEvent, path: string): void
-//   }
 
 function Github({redirect}: {redirect:Function}) {
 
