@@ -1,11 +1,16 @@
-import { ReactEventHandler } from "react";
+import { Dispatch, SetStateAction } from "react";
+
+interface buttonProps {
+    functionality: Dispatch<SetStateAction<Boolean>>
+    text: string
+}
 
 function Button(
-    { functionality }: {functionality:ReactEventHandler}) {
+    { functionality, text }: buttonProps) {
 
     return (
         <div>
-            <button onClick={functionality}></button>
+            <button onClick={():void => {functionality}}>{text}</button>
         </div>
     )
 }
