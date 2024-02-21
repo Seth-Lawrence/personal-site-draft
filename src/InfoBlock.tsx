@@ -1,5 +1,6 @@
 import About from './About.tsx';
 import Resume from './Resume.tsx';
+import './InfoBlock.scss'
 
 
 function InfoBlock({ module }) {
@@ -7,8 +8,8 @@ function InfoBlock({ module }) {
 
 
     return (
-        <div>
-
+        <div className='InfoBlock'>
+            <About />
         </div>
     )
 
