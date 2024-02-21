@@ -35,9 +35,9 @@ function App() {
           setIsLoading={setIsLoading}
         />
       </aside>
-      <div>
+      <section>
         <InfoBlock module={showAbout || showResume || showProjects} />
-      </div>
+      </section>
     </section>
   );
 }
