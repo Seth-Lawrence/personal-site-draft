@@ -1,29 +1,18 @@
-import { Dispatch, SetStateAction } from "react";
-import Button from "./Button"
+import React, { Dispatch, ReactEventHandler, SetStateAction } from "react";
+import Button from "./Button";
 
 
-interface leftNavProps {
-    setShowAbout: Dispatch<SetStateAction<Boolean>>,
-    setShowResume: Dispatch<SetStateAction<Boolean>>,
-    setShowProjects: Dispatch<SetStateAction<Boolean>>,
-    setIsLoading: Function
-}
 
-function LeftNav(
-    {
-        setShowAbout,
-        setShowResume,
-        setShowProjects
-    }: leftNavProps) {
+function LeftNav({ handleClick }) {
 
 
     return (
         <div>
-            <Button functionality={setShowAbout} text='About' />
-            <Button functionality={setShowResume} text='Resume' />
-            <Button functionality={setShowProjects} text='Projects' />
+            <Button handleClick={handleClick} text='About' />
+            <Button handleClick={handleClick} text='Resume' />
+            <Button handleClick={handleClick} text='Projects' />
         </div>
-    )
+    );
 }
 
 export default LeftNav;

@@ -2,16 +2,16 @@ import { Dispatch, SetStateAction } from "react";
 import './Button.scss'
 
 interface buttonProps {
-    functionality: Dispatch<SetStateAction<Boolean>>
+    handleClick: Function
     text: string
 }
 
 function Button(
-    { functionality, text }: buttonProps) {
+    { handleClick, text }: buttonProps) {
 
     return (
         <div className='Button-container'>
-            <button className='Button' onClick={():void => {functionality}}>{text}</button>
+            <button className='Button' onClick={():void => {handleClick(text)}}>{text}</button>
         </div>
     )
 }

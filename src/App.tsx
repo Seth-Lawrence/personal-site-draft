@@ -4,8 +4,9 @@ import Navigation from './Navigation';
 import LeftNav from './LeftNav';
 import Homepage from './Homepage';
 import React, { useState } from 'react';
-import InfoBlock from './InfoBlock';
-
+import About from './About';
+import Resume from './Resume';
+import Projects from './Projects'
 
 
 
@@ -23,20 +24,41 @@ function App() {
 
   //TODO: add function for showing a loading spinner
 
+  function handleClick(section:string):void {
+    setIsLoading(true);
+    (showAbout && setShowAbout(false));
+    (showResume && setShowResume(false));
+    (showProjects && setShowProjects(false));
+
+    switch (section.toLowerCase()) {
+      case 'about':
+        setShowAbout(true);
+        break;
+      case 'resume':
+        setShowResume(true);
+        break;
+      case 'projects':
+        setShowProjects(true);
+        break;
+      default:
+        setShowAbout(true);
+    }
+
+    setIsLoading(false);
+  }
+
   return (
     <section className='App'>
       <aside>
         <Navigation redirect={redirect} />
         <Homepage />
-        <LeftNav
-          setShowAbout={setShowAbout}
-          setShowResume={setShowResume}
-          setShowProjects={setShowProjects}
-          setIsLoading={setIsLoading}
-        />
+        <LeftNav handleClick={handleClick} />
       </aside>
       <section>
-        <InfoBlock module={showAbout || showResume || showProjects} />
+        {
+        (showAbout && <About />)
+        || (showResume && <Resume />)
+        || (showProjects && <Projects />)}
       </section>
     </section>
   );
