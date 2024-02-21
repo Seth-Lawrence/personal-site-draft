@@ -4,7 +4,7 @@ function ProfilePicture() {
 
     return (
         <>
-        <img className='ProfilePicture' src='profile-picture.jpg'></img>
+        <img className='ProfilePicture' src='Untitled.jpg'></img>
         </>
     )
 }
