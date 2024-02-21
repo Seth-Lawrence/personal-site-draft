@@ -1,4 +1,4 @@
-import './ProfilePicture.css'
+import './ProfilePicture.scss'
 
 function ProfilePicture() {
 

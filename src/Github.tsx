@@ -1,4 +1,4 @@
-import './Github.css';
+import './Github.scss';
 import { FaGithub } from "react-icons/fa";
 
 

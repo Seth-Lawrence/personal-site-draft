@@ -1,7 +1,7 @@
 import Linkedin from "./Linkedin";
 import Signature from "./Signature";
 import { Navbar, NavLink } from 'reactstrap';
-import './Navigation.css';
+import './Navigation.scss';
 import Github from './Github'
 
 function Navigation({ redirect }: {redirect: Function}) {

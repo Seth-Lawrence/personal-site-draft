@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction } from "react";
-import './Button.css'
+import './Button.scss'
 
 interface buttonProps {
     functionality: Dispatch<SetStateAction<Boolean>>

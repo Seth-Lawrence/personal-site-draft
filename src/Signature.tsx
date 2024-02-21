@@ -1,4 +1,4 @@
-import './Signature.css'
+import './Signature.scss'
 
 function Signature() {
 

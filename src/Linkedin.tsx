@@ -1,4 +1,4 @@
-import './Linkedin.css';
+import './Linkedin.scss';
 
 function Linkedin({ redirect }: {redirect: Function}) {
 
