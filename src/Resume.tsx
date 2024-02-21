@@ -1,8 +1,10 @@
+import './Resume.scss';
+
 
 function Resume() {
 
     return (
-        <div>
+        <div className='Resume'>
             'this is a test resume'
         </div>
     )

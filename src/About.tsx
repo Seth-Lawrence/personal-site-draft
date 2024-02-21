@@ -1,9 +1,10 @@
 import Signature from "./Signature";
+import './About.scss';
 
 function About() {
 
     return (
-        <div>
+        <div className='About'>
             Hi, my name is Seth. I studied Russian and German at Ohio State, and then went on to Uni Salzburg / Bowling Green.
             I also lived in Europe (Munich, Salzburg) for two years. After school, I spent nearly 9 years at Glassdoor as a Product Analyst and People Manager on the product and
             localization/internationalization team. I have successfully led localization and internationalization projects,
