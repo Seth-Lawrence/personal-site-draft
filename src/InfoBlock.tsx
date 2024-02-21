@@ -1,11 +1,14 @@
+import About from './About.tsx';
+import Resume from './Resume.tsx';
 
 
+function InfoBlock({ module }) {
 
-function InfoBlock({ info }) {
+
 
     return (
         <div>
-            test
+
         </div>
     )
 

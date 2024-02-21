@@ -4,6 +4,9 @@ import Navigation from './Navigation';
 import LeftNav from './LeftNav';
 import Homepage from './Homepage';
 import React, { useState } from 'react';
+import InfoBlock from './InfoBlock';
+
+
 
 
 function App() {
@@ -18,12 +21,24 @@ function App() {
     window.open(path);
   }
 
+  //TODO: add function for showing a loading spinner
+
   return (
-    <div>
+    <>
+      <div>
         <Navigation redirect={redirect} />
         <Homepage />
-        <LeftNav />
-    </div>
+        <LeftNav
+          setShowAbout={setShowAbout}
+          setShowResume={setShowResume}
+          setShowProjects={setShowProjects}
+          setIsLoading={setIsLoading}
+        />
+      </div>
+      <div>
+        <InfoBlock module={showAbout || showResume || showProjects} />
+      </div>
+    </>
   );
 }
 
