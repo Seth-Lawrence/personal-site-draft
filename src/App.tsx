@@ -24,8 +24,8 @@ function App() {
   //TODO: add function for showing a loading spinner
 
   return (
-    <>
-      <div>
+    <section className='App'>
+      <aside>
         <Navigation redirect={redirect} />
         <Homepage />
         <LeftNav
@@ -34,11 +34,11 @@ function App() {
           setShowProjects={setShowProjects}
           setIsLoading={setIsLoading}
         />
-      </div>
+      </aside>
       <div>
         <InfoBlock module={showAbout || showResume || showProjects} />
       </div>
-    </>
+    </section>
   );
 }
 
