@@ -48,7 +48,7 @@ function App() {
         setShowHome(true);
         break;
       default:
-        setShowAbout(true);
+        setShowHome(true);
     }
 
     setIsLoading(false);
