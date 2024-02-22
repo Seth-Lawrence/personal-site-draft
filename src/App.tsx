@@ -5,7 +5,7 @@ import LeftNav from './LeftNav';
 import Homepage from './Homepage';
 import React, { useState } from 'react';
 import About from './About';
-import Resume from './Resume';
+import Skills from './Skills';
 import Projects from './Projects';
 import Home from './Home'
 
@@ -65,7 +65,7 @@ function App() {
         {
           (showHome && <Home />)
           || (showAbout && <About />)
-          || (showResume && <Resume />)
+          || (showResume && <Skills />)
           || (showProjects && <Projects />)
         }
       </section>

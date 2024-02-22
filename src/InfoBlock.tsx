@@ -1,5 +1,5 @@
 import About from './About.tsx';
-import Resume from './Resume.tsx';
+import Resume from './Skills.tsx';
 import './InfoBlock.scss'
 
 
