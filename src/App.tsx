@@ -6,15 +6,17 @@ import Homepage from './Homepage';
 import React, { useState } from 'react';
 import About from './About';
 import Resume from './Resume';
-import Projects from './Projects'
+import Projects from './Projects';
+import Home from './Home'
 
 
 
 function App() {
 
-  const [showAbout, setShowAbout] = useState<Boolean>(true);
-  const [showResume, setShowResume] = useState<Boolean>(false);
+  const [showHome, setShowHome] = useState<Boolean>(true);
   const [showProjects, setShowProjects] = useState<Boolean>(false);
+  const [showAbout, setShowAbout] = useState<Boolean>(false);
+  const [showResume, setShowResume] = useState<Boolean>(false);
   const [isLoading, setIsLoading] = useState<Boolean>(false);
 
   function redirect(evt: React.MouseEvent, path: string): void {
@@ -24,21 +26,26 @@ function App() {
 
   //TODO: add function for showing a loading spinner
 
-  function handleClick(section:string):void {
+  function handleClick(section: string): void {
     setIsLoading(true);
+    (showHome && setShowHome(false));
     (showAbout && setShowAbout(false));
     (showResume && setShowResume(false));
     (showProjects && setShowProjects(false));
 
+    //the case conditions need to match button text
     switch (section.toLowerCase()) {
       case 'about':
         setShowAbout(true);
         break;
-      case 'resume':
+      case 'skills':
         setShowResume(true);
         break;
       case 'projects':
         setShowProjects(true);
+        break;
+      case 'home':
+        setShowHome(true);
         break;
       default:
         setShowAbout(true);
@@ -56,9 +63,11 @@ function App() {
       </aside>
       <section>
         {
-        (showAbout && <About />)
-        || (showResume && <Resume />)
-        || (showProjects && <Projects />)}
+          (showHome && <Home />)
+          || (showAbout && <About />)
+          || (showResume && <Resume />)
+          || (showProjects && <Projects />)
+        }
       </section>
     </section>
   );

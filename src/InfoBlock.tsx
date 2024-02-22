@@ -5,8 +5,6 @@ import './InfoBlock.scss'
 
 function InfoBlock({ module }) {
 
-
-
     return (
         <div className='InfoBlock'>
             <About />

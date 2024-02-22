@@ -3,7 +3,7 @@ import './Signature.scss'
 function Signature() {
 
     return (
-        <div className="signature">
+        <div className="Signature">
             Seth Hobson
         </div>
     )
