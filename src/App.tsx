@@ -26,7 +26,7 @@ function App() {
 
   //TODO: add function for showing a loading spinner
 
-  function handleClick(section: string): void {
+  function handleClick(section: 'about' | 'skills' | 'pojects' | 'home'): void {
     setIsLoading(true);
     (showHome && setShowHome(false));
     (showAbout && setShowAbout(false));
