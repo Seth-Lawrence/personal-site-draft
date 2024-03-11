@@ -4,7 +4,7 @@ import Navigation from './Navigation';
 import LeftNav from './LeftNav';
 import Homepage from './Homepage';
 import React, { useState } from 'react';
-import About from './About';
+import About from './components/About';
 import Skills from './Skills';
 import Projects from './Projects';
 import Home from './Home'

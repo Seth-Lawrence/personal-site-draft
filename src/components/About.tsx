@@ -1,5 +1,5 @@
-import Signature from "./Signature";
-import './About.scss';
+import Signature from "../Signature";
+import '../About.scss';
 
 function About() {
 
